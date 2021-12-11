@@ -38,11 +38,11 @@ public class Main extends JavaPlugin {
 	
 	//Mess of Strings
 	public String header1 = ChatColor.WHITE + "" + ChatColor.BOLD + "============" + ChatColor.DARK_RED + ""
-			+ ChatColor.BOLD + "[Simple-Drugs]" + ChatColor.WHITE + "" + ChatColor.BOLD + "============";
+			+ ChatColor.BOLD + "PLUG" + ChatColor.WHITE + "" + ChatColor.BOLD + "============";
 
 	public static String prefix = ChatColor.GRAY + "" + ChatColor.BOLD + "[" + ChatColor.DARK_RED + "" + ChatColor.BOLD
-			+ "SD" + ChatColor.GRAY + "" + ChatColor.BOLD + "] " + ChatColor.RESET;
-	public static String stack = ChatColor.RED + "" + ChatColor.BOLD + "Do Not Use It In A Stack.";
+			+ "PLUG" + ChatColor.GRAY + "" + ChatColor.BOLD + "] " + ChatColor.RESET;
+	public static String stack = ChatColor.RED + "" + ChatColor.BOLD + "Non usarlo con gli stack";
 	
 	public static String bagofdrugs = "Drugs.BagOfDrugs";
 	//Check for Update
@@ -53,7 +53,7 @@ public class Main extends JavaPlugin {
 		Metrics metrics = new Metrics(this, pluginId);
 
 		getServer().getConsoleSender().sendMessage(header1);
-		getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "Loading all Class files and Handlers...");
+		getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "Caricando tutte le classi");
 		createCustomConfig();
 
 		D = new Drugs(this);
@@ -62,11 +62,11 @@ public class Main extends JavaPlugin {
 
 			if (isCraftingDisabled) {
 				getServer().getConsoleSender()
-						.sendMessage(ChatColor.WHITE + drug.getName() + ":" + ChatColor.RED + " Disabled");
+						.sendMessage(ChatColor.WHITE + drug.getName() + ":" + ChatColor.RED + " Disabilitata");
 			} else {
 				D.enableDrug(drug);
 				getServer().getConsoleSender()
-						.sendMessage(ChatColor.WHITE + drug.getName() + ":" + ChatColor.GREEN + " Enabled");
+						.sendMessage(ChatColor.WHITE + drug.getName() + ":" + ChatColor.GREEN + " Abilitata");
 			}
 		}
 		try {
@@ -78,7 +78,7 @@ public class Main extends JavaPlugin {
 			e.printStackTrace();
 		}
 
-		getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "Loaded without Errors.");
+		getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "Caricato senza errori.");
 
 	}
 
@@ -124,16 +124,16 @@ public class Main extends JavaPlugin {
 		if (Bukkit.getPluginManager().getPlugin("PlaceholderAPI") != null) {
 			Bukkit.getConsoleSender().sendMessage(prefix + 
 					ChatColor.translateAlternateColorCodes('&', 
-							"&aFound PlaceHolderAPI."));
+							"&aTrovato PlaceHolderAPI."));
 			Bukkit.getConsoleSender().sendMessage(prefix + 
 					ChatColor.translateAlternateColorCodes('&', 
-							"&aHooked into PlaceHolderAPI"));
+							"&aCollegato PlaceHolderAPI."));
 			new DrugPlaceHolders(this, D).register();
 		} else {
 			Bukkit.getConsoleSender().sendMessage(prefix + 
-					ChatColor.translateAlternateColorCodes('&', "&cPlaceHolderAPI.jar was not found."));
+					ChatColor.translateAlternateColorCodes('&', "&cPlaceHolderAPI.jar non trovato."));
 			Bukkit.getConsoleSender().sendMessage(prefix + 
-					ChatColor.translateAlternateColorCodes('&', "&cDisabling all PlaceHolderAPI elements"));
+					ChatColor.translateAlternateColorCodes('&', "&cPlaceHolderAPI offline"));
 		}
 	}
 	
@@ -141,23 +141,23 @@ public class Main extends JavaPlugin {
 		if(this.drugsConfig.getBoolean("Drugs.CheckForUpdate") == true) {
 			new Updater(this, 9684).checkForUpdate();
 		}else {
-			Bukkit.getConsoleSender().sendMessage(Main.prefix + ChatColor.translateAlternateColorCodes('&', "&c&oDisabled Update Checking"));
+			Bukkit.getConsoleSender().sendMessage(Main.prefix + ChatColor.translateAlternateColorCodes('&', "&c&oDisabilitato"));
 		}
 	}
 	
 	public void loadVault() {
 		 if (!setupEconomy() ) {
 				Bukkit.getConsoleSender().sendMessage(prefix + 
-						ChatColor.translateAlternateColorCodes('&', "&cVault.jar was not found or you don't have an Economy Plugin"));
+						ChatColor.translateAlternateColorCodes('&', "&cVault.jar non trovato"));
 				Bukkit.getConsoleSender().sendMessage(prefix + 
-						ChatColor.translateAlternateColorCodes('&', "&cDisabling all Vault elements"));
+						ChatColor.translateAlternateColorCodes('&', "&cVault.jar offline"));
 	        }else {
 	        	Bukkit.getConsoleSender().sendMessage(prefix + 
 	        			ChatColor.translateAlternateColorCodes('&', 
-	        					"&aVault has been found."));
+	        					"&aVault trovato."));
 	        	Bukkit.getConsoleSender().sendMessage(prefix + 
 	        			ChatColor.translateAlternateColorCodes('&', 
-	        					"&aHooked into Vault."));
+	        					"&aCollegato Vault."));
 	        }
 	}
 	 private boolean setupEconomy() {
