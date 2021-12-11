@@ -65,7 +65,7 @@ public class Drugs {
 	private void loadDrugs() {
 		allDrugs.clear();
 
-		Drug weed = new Drug("Weed", ChatColor.DARK_GREEN + "" + ChatColor.BOLD + "WEED", Material.GREEN_DYE,
+		Drug weed = new Drug("Erba", ChatColor.DARK_GREEN + "" + ChatColor.BOLD + "ERBA", Material.GREEN_DYE,
 				PotionEffectType.SLOW, PotionEffectType.LUCK, PotionEffectType.SLOW_FALLING,
 				PotionEffectType.SLOW_DIGGING);
 
@@ -73,15 +73,15 @@ public class Drugs {
 				PotionEffectType.CONFUSION, PotionEffectType.SLOW, PotionEffectType.LUCK,
 				PotionEffectType.NIGHT_VISION);
 
-		Drug acid = new Drug("Acid", ChatColor.AQUA + "" + ChatColor.BOLD + "ACID", Material.PUMPKIN_SEEDS,
+		Drug acid = new Drug("LSD", ChatColor.AQUA + "" + ChatColor.BOLD + "LSD", Material.PUMPKIN_SEEDS,
 				PotionEffectType.CONFUSION, PotionEffectType.NIGHT_VISION, PotionEffectType.HEALTH_BOOST,
 				PotionEffectType.SLOW_FALLING);
 
-		Drug coke = new Drug("Coke", ChatColor.AQUA + "" + ChatColor.BOLD + "COKE", Material.SUGAR,
+		Drug coke = new Drug("Coca", ChatColor.AQUA + "" + ChatColor.BOLD + "COCA", Material.SUGAR,
 				PotionEffectType.INCREASE_DAMAGE, PotionEffectType.FAST_DIGGING, PotionEffectType.HEALTH_BOOST,
 				PotionEffectType.DAMAGE_RESISTANCE);
 
-		Drug heroin = new Drug("Heroin", ChatColor.DARK_RED + "" + ChatColor.BOLD + "HEROIN", Material.WITHER_ROSE,
+		Drug heroin = new Drug("Eroina", ChatColor.DARK_RED + "" + ChatColor.BOLD + "EROINA", Material.WITHER_ROSE,
 				PotionEffectType.WEAKNESS, PotionEffectType.SLOW, PotionEffectType.UNLUCK, PotionEffectType.POISON);
 
 		Drug molly = new Drug("Molly", ChatColor.DARK_AQUA + "" + ChatColor.BOLD + "MOLLY", Material.IRON_NUGGET,
@@ -92,7 +92,7 @@ public class Drugs {
 				PotionEffectType.SATURATION, PotionEffectType.DAMAGE_RESISTANCE, PotionEffectType.JUMP,
 				PotionEffectType.SLOW_DIGGING);
 
-		Drug shrooms = new Drug("Shrooms", ChatColor.GRAY + "" + ChatColor.BOLD + "SHROOMS", Material.CRIMSON_FUNGUS,
+		Drug shrooms = new Drug("Funghetti", ChatColor.GRAY + "" + ChatColor.BOLD + "FUNGHETTI", Material.CRIMSON_FUNGUS,
 				PotionEffectType.LUCK, PotionEffectType.NIGHT_VISION, PotionEffectType.CONFUSION,
 				PotionEffectType.GLOWING);
 
@@ -107,7 +107,7 @@ public class Drugs {
 				PotionEffectType.DAMAGE_RESISTANCE, PotionEffectType.SLOW_FALLING, PotionEffectType.SLOW,
 				PotionEffectType.GLOWING);
 
-		Drug alcohol = new Drug("Alcohol", ChatColor.GOLD + "" + ChatColor.BOLD + "ALCOHOL", Material.WATER_BUCKET,
+		Drug alcohol = new Drug("Alcol", ChatColor.GOLD + "" + ChatColor.BOLD + "ALCOL", Material.WATER_BUCKET,
 				PotionEffectType.SPEED, PotionEffectType.NIGHT_VISION, PotionEffectType.HUNGER,
 				PotionEffectType.CONFUSION);
 
@@ -119,19 +119,19 @@ public class Drugs {
 				PotionEffectType.ABSORPTION, PotionEffectType.DAMAGE_RESISTANCE, PotionEffectType.FIRE_RESISTANCE,
 				PotionEffectType.LEVITATION);
 
-		Drug ketamine = new Drug("Ketamine", ChatColor.RED + "" + ChatColor.BOLD + "KETAMINE",
+		Drug ketamine = new Drug("Ketamina", ChatColor.RED + "" + ChatColor.BOLD + "KETAMINA",
 				Material.POWDER_SNOW_BUCKET, PotionEffectType.NIGHT_VISION, PotionEffectType.SPEED,
 				PotionEffectType.FAST_DIGGING, PotionEffectType.CONFUSION, PotionEffectType.SLOW_FALLING);
 
-		Drug oxy = new Drug("Oxy", ChatColor.AQUA + "" + ChatColor.BOLD + "OXY", Material.WHITE_DYE,
+		Drug oxy = new Drug("Oxycodone", ChatColor.AQUA + "" + ChatColor.BOLD + "OXYCODONE", Material.WHITE_DYE,
 				PotionEffectType.ABSORPTION, PotionEffectType.DAMAGE_RESISTANCE, PotionEffectType.CONFUSION,
 				PotionEffectType.GLOWING);
 
-		Drug tussin = new Drug("Tussin", ChatColor.DARK_PURPLE + "" + ChatColor.BOLD + "TUSSIN", Material.PURPLE_CANDLE,
+		Drug tussin = new Drug("Lean", ChatColor.DARK_PURPLE + "" + ChatColor.BOLD + "LEAN", Material.PURPLE_CANDLE,
 				PotionEffectType.INCREASE_DAMAGE, PotionEffectType.HEAL, PotionEffectType.JUMP,
 				PotionEffectType.CONFUSION);
 
-		Drug xannx = new Drug("Xannx", ChatColor.DARK_GREEN + "" + ChatColor.BOLD + "XANAX", Material.GREEN_CANDLE,
+		Drug xannx = new Drug("Xanax", ChatColor.DARK_GREEN + "" + ChatColor.BOLD + "XANAX", Material.GREEN_CANDLE,
 				PotionEffectType.SLOW, PotionEffectType.SLOW_DIGGING, PotionEffectType.SLOW_FALLING,
 				PotionEffectType.BLINDNESS);
 
