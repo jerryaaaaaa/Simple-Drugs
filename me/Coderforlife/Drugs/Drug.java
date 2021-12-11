@@ -87,12 +87,12 @@ public class Drug {
 		meta.addItemFlags(ItemFlag.HIDE_ENCHANTS, ItemFlag.HIDE_ATTRIBUTES);
 
 		ArrayList<String> lore = new ArrayList<>();
-		lore.add(ChatColor.GREEN + "" + ChatColor.BOLD + "Effects:");
+		lore.add(ChatColor.GREEN + "" + ChatColor.BOLD + "Effetti:");
 
 		for (PotionEffectType type : effects) {
 			lore.add(ChatColor.GRAY + "- " + ChatColor.GOLD + toTitleCase(type));
 		}
-		lore.add(ChatColor.GRAY + "" + ChatColor.UNDERLINE + "Right-Click To Use");
+		lore.add(ChatColor.GRAY + "" + ChatColor.UNDERLINE + "Tasto-Destro per sballarti");
 		meta.setLore(lore);
 		drugItem.setItemMeta(meta);
 		return drugItem;
