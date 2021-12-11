@@ -23,8 +23,8 @@ import net.md_5.bungee.api.chat.TextComponent;
 
 public class BagOfDrugs implements Listener {
 
-	public static String bagName = ChatColor.GOLD + "" + ChatColor.BOLD + "Bag Of Drugs";
-	public static String invName = ChatColor.translateAlternateColorCodes('&', "          &6&l&oBag Of Drugs");
+	public static String bagName = ChatColor.GOLD + "" + ChatColor.BOLD + "Zainetto delle Droghe";
+	public static String invName = ChatColor.translateAlternateColorCodes('&', "          &6&l&oZainetto delle Droghe");
 	private Main plugin;
 	private Drugs drugs;
 
@@ -41,7 +41,7 @@ public class BagOfDrugs implements Listener {
 		this.plugin = plugin;
 	}
 
-	private String sober = ChatColor.ITALIC + "Remove Drugs With" + ChatColor.RED + " /d soberup";
+	private String sober = ChatColor.ITALIC + "Torna sobrio con" + ChatColor.RED + " /d soberup";
 
 	@EventHandler
 	public void BagOpen(PlayerInteractEvent ev) {
@@ -98,7 +98,7 @@ public class BagOfDrugs implements Listener {
 					continue;
 				}
 				p.getInventory().addItem(drug.getDrugItem());
-				p.sendMessage(Main.prefix + ChatColor.GRAY + "You've been given " + drug.getDisplayName());
+				p.sendMessage(Main.prefix + ChatColor.GRAY + "Hai selezionato: " + drug.getDisplayName());
 				p.playSound(p.getLocation(), Sound.ITEM_FLINTANDSTEEL_USE, 1, (float) 0.5);
 				p.closeInventory();
 				p.spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText(sober));
